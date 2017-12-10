@@ -2,12 +2,22 @@
 
 import socket
 import sys
+<<<<<<< HEAD
 
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 message2 = 'tjolahoppsan'
 # Bind the socket to the port
 server_address =('192.168.1.22', 10000)
+=======
+from datetime import datetime
+
+# Create a TCP/IP socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+message2 = str(datetime.now())
+# Bind the socket to the port
+server_address =('192.168.1.186', 10000)
+>>>>>>> 80e69279254bd46bba36cc6edf999fd3ec906ccf
 address =('192.168.1.199', 5556)
 print >>sys.stderr, 'starting up on %s port %s' % server_address
 print >>sys.stderr, ' sending to  %s port %s' % address
